@@ -9,39 +9,74 @@
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <main class="card">
+    <section class="result">
+      <h2>Your Result</h2>
+      <div class="score">
+        <span class="value">76</span>
+        <span class="total">of 100</span>
+      </div>
+      <h3>Great</h3>
+      <p class="info">
+        You scored higher than 65% of the people who have taken these tests
+      </p>
+    </section>
 
-  Your Result
-  76
-  of 100
+    <section class="summary">
+      <h2 class="stats-heading">Summary</h2>
+      <ul class="stats">
+        <li class="item reaction">
+          <div class="left">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction-img">
+            <span>Reaction</span>
+          </div>
+          <p class="right"><strong>80</strong><span>/100</span></p>
+        </li>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <li class="item memory">
+          <div class="left">
+            <img src="./assets/images/icon-memory.svg" alt="memory">
+            <span>Memory</span>
+          </div>
+          <p class="right"><strong>92</strong><span>/100</span></p>
+        </li>
 
-  Reaction
-  80 / 100
+        <li class="item verbal">
+          <div class="left">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal-img">
+            <span>Verbal</span>
+          </div>
+          <p class="right"><strong>61</strong><span>/100</span></p>
+        </li>
 
-  Memory
-  92 / 100
+        <li class="item visual">
+          <div class="left">
+            <img src="./assets/images/icon-visual.svg" alt="visual-img">
+            <span>Visual</span>
+          </div>
+          <p class="right"><strong>73</strong><span>/100</span></p>
+        </li>
+      </ul>
+      <button>Continue</button>
+    </section>
 
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/vedant-shinde327/results-summary-component">Vedant Shinde</a>.
   </div>
+  </main>  
+  
 </body>
 </html>
