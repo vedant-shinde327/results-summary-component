@@ -144,7 +144,10 @@ button {
     background-color: hsl(224, 30%, 27%);
     border-radius: 999px;
     cursor: pointer;
-    
+    transition: all 0.2s ease;
+}
+button:hover {
+    background-color: hsl(234, 85%, 40%);
 }
 
 .attribution {
